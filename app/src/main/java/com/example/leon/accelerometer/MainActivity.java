@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
         float grenzWert = now - last;
 
-        if (grenzWert > 0) {
+        if (grenzWert > 10) {
            // Toast.makeText(MainActivity.this, "langsamer", Toast.LENGTH_LONG).show();
             xMaxText.setText("X-Max: " + event.values[0]);
             yMaxText.setText("Y-Max: " + event.values[1]);
